@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Tips </title>
+  <!-- resetCSS -->
+  <link href="css/reset.css" rel="stylesheet">
+  <!-- BootstrapCSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- baseCSS -->
+  <link href="css/base.css" rel="stylesheet">
+</head>
+<body>
+  <div id="overlay"><div id="loader">Loading...</div></div>
+  <section id="main" class="main">
+  <header>
+      <nav class="navbar">
+        <div class="container-fluid">
+          <div class="navbar-header">
+
+　          <!---->
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#site-menu">
+                <p class="glyphicon glyphicon-menu-hamburger"></p>
+            </button>
+
+            <!--LeftLogo-->
+            <a class="navbar-brand" href="#" v-scroll-to="'body'">tips</a>
+
+          </div>
+          <div class="collapse navbar-collapse" id="site-menu">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#" v-scroll-to="'#about'">About</a></li>
+              <li><a href="#" v-scroll-to="'#portfolio'">Portfolio</a></li>
+              <li><a href="#" v-scroll-to="'#blog'">Blog</a></li>
+              <li><a href="#" v-scroll-to="'#contact'">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+  </header>
+  <section class="mainVisual">
+        <div>Say</div>
+        <div>HelloWorld</div>
+  </section>
+  <section id="about" class="container sectionTop">
+    <h2 class="opacityNone" :class="{opacityActive: visible}">About</h2>
+    <div class="historyWrapper opacityNone row" :class="{ opacityActive: visible }">
+      <div class="col-md-6">
+        <article>
+          <h3>historyTitlehistoryTitlehistoryTitlehistoryTitlehistoryTitle</h3>
+          <p>texttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttext</p>
+        </article>
+      </div>
+      <div class="col-md-5 col-md-offset-1">
+        <div class="history-image">
+            <img src="img/mainvisual.jpg">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="portfolio" class="container sectionTop">
+    <h2 class="opacityNone" :class="{opacityActive: visible}">Portfolio</h2>
+    <ul class="row portfolios opacityNone" :class="{opacityActive: visible}">
+      <li class="col-md-4"><img src="img/portfolio01.jpg"></li>
+      <li class="col-md-4"><img src="img/portfolio02.jpg"></li>
+      <li class="col-md-4"><img src="img/portfolio03.jpg"></li>
+      <li class="col-md-4"><img src="img/portfolio01.jpg"></li>
+      <li class="col-md-4"><img src="img/portfolio02.jpg"></li>
+      <li class="col-md-4"><img src="img/portfolio03.jpg"></li>
+    </ul>
+  </section>
+  <section id="blog" class="container sectionTop">
+    <h2 class="opacityNone" :class="{opacityActive: visible}">Blog</h2>
+    <ul class="row blogs opacityNone" :class="{opacityActive: visible}">
+      <li class="col-md-4">
+        <figure>
+          <img src="img/portfolio01.jpg" alt="">
+          <figcaption>
+              <h4><a href="">blogTitle</a></h4>
+          </figcaption>
+        </figure>
+      </li>
+      <li class="col-md-4">
+        <figure>
+          <img src="img/portfolio01.jpg" alt="">
+          <figcaption>
+              <h4><a href="">blogTitle</a></h4>
+          </figcaption>
+        </figure>
+      </li>
+      <li class="col-md-4">
+        <figure>
+          <img src="img/portfolio01.jpg" alt="">
+          <figcaption>
+              <h4><a href="">blogTitle</a></h4>
+          </figcaption>
+        </figure>
+      </li>
+    </ul>
+  </section>
+  <footer class="sectionTop">
+    <div class="container">
+      <ul class="row">
+        <li class="col-md-4">
+            <ul class="text-center">
+              <li>タイトル</li>
+              <li>テキスト</li>
+              <li>テキスト</li>
+            </ul>
+        </li>
+        <li class="col-md-4">
+            <ul class="text-center">
+              <li>snsアイコン</li>
+              <li>copyright</li>
+            </ul>
+        </li>
+        <li class="col-md-4">
+            <ul class="text-center">
+              <li>contactInfo</li>
+              <li></li>
+              <li></li>
+            </ul>
+        </li>
+      </ul>
+      
+    </div>
+  </footer>
+  <p id="pageTop" class="opacityNone" :class="{ opacityActive: visible }"><a href="#" v-scroll-to="'body'">PAGE TOP</a></p>
+</section>
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <!-- BootstrapJS -->
+  <script src="js/bootstrap.min.js"></script>
+  <!-- vue.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.3.4/vue.min.js"></script>
+  <script src="https://unpkg.com/vue-scrollto"></script>
+  <script src="js/windowStatePlugin.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
